@@ -1,0 +1,12 @@
+<!DOCTYPE html><html><body><script>
+var r='http:\/\/www.mi.com\/';var c = '17409.0056';
+var muctm=function(){var Base64={_keyStr:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=",encode:function(e){var t="";var n,r,i,s,o,u,a;var f=0;e=Base64._utf8_encode(e);while(f<e.length){n=e.charCodeAt(f++);r=e.charCodeAt(f++);i=e.charCodeAt(f++);s=n>>2;o=(n&3)<<4|r>>4;u=(r&15)<<2|i>>6;a=i&63;if(isNaN(r)){u=a=64}else if(isNaN(i)){a=64};t=t+this._keyStr.charAt(s)+this._keyStr.charAt(o)+this._keyStr.charAt(u)+this._keyStr.charAt(a)}return t},_utf8_encode:function(e){e=e.replace(/\r\n/g,"\n");var t="";for(var n=0;n<e.length;n++){var r=e.charCodeAt(n);if(r<128){t+=String.fromCharCode(r)}else if(r>127&&r<2048){t+=String.fromCharCode(r>>6|192);t+=String.fromCharCode(r&63|128)}else{t+=String.fromCharCode(r>>12|224);t+=String.fromCharCode(r>>6&63|128);t+=String.fromCharCode(r&63|128)}};return t},enf:function(s){var e=Base64.encode(s);return e.replace(/\+/g,'-').replace(/\//g,'_').replace(/\=/g,'*')}};function createCookie(name,value,days,domain){if(days){var date=new Date();date.setTime(date.getTime()+(days*24*60*60*1000));var expires="; expires="+date.toGMTString()}else var expires="";document.cookie=name+"="+value+expires+"; path=/"+((domain)?"; domain="+domain:"")};function ctm(mi_u_t,mi_u_v,mi_u_r,mi_u_d){if(mi_u_t==null||mi_u_t=='')return false;var c={};c['mi_u_t']=mi_u_t;c['mi_u_v']=mi_u_v;c['mi_u_r']=mi_u_r;c['mi_u_d']=mi_u_d;var ec=Base64.enf(JSON.stringify(c));createCookie("muctm",ec,1,"mi.com");return true};return ctm}();
+function rb(s){var t="";for (var i=0;i<s.length;i++ ){var c = s.charAt(i);if (c!=" "){t+=c;}}return t;}
+function gc(n){var c=document.cookie;var s = rb(c);var ps = s.split(";");for (var i=0;i<ps.length ;i++ ){var p = ps[i].split("=");if(p.length>1 && p[0]==n){return p[1];}}return "";}
+function sc24(name,value){var d = new Date();d.setTime(d.getTime()+24*60*60*1000);var nc = name+"="+value+";"+"path=/;domain=.mi.com;expires="+d.toGMTString();window.document.cookie=nc;}
+if(document.documentElement.clientHeight <= 100){muctm('1','',r,document.documentElement.clientHeight);};
+var mutid = gc("mutid");
+sc24("mutid",mutid.substr(0,40) + "00");
+location.href='http:\/\/hd.mi.com\/x\/06011r\/index.html?v=06010108';
+setTimeout(function(){location.href='';},2000);
+</script></body></html>
